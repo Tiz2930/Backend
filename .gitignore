@@ -54,3 +54,32 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Node.js
+node_modules/
+dist/
+*.log
+.env
+
+# json-server
+data/*.json
+
+# Cliente (por si compilás assets del front)
+client/css/
+
+# Sistema y editores
+.DS_Store
+Thumbs.db
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# Otros
+package-lock.json
+
