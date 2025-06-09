@@ -7,6 +7,6 @@ export class AppController {
 
   @Get('api')
   getTracks(): iTrack[] {
-    return this.appService.getTracks();
+    return this.trackService.getTracks();
   }
 }
