@@ -1,12 +1,9 @@
 import { Controller, Get } from '@nestjs/common';
-import { AppService, iTrack } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly trackService: AppService) { }
-
-  @Get('api')
-  getTracks(): iTrack[] {
-    return this.trackService.getTracks();
+  @Get()
+  getHello(): string {
+    return '¡El backend está funcionando correctamente!';
   }
 }

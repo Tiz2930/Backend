@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-export interface iTrack {
+/*export interface iTrack {
   id: number,
   title: string,
   duration: number,
@@ -56,11 +56,8 @@ export const tracks: iTrack[] = [
     duration: 120,
     artist: "interprete 1"
   }
-]
+] */
 
 @Injectable()
 export class AppService {
-  getTracks(): iTrack[] {
-    return tracks;
-  }
 }
