@@ -4,9 +4,10 @@ import { Track } from './track.interface';
 
 @Controller('track')
 export class TrackController {
-    constructor(private readonly tracService: TrackService) {}
-    @Get()
-    get Tracks(): Promise <Track[]>{
-        return this.tracService.getTracks();
-    }
+  constructor(private readonly trackService: TrackService) {}
+
+  @Get()
+  getTracks(): Promise<Track[]> {
+    return this.trackService.getTracks();
+  }
 }

@@ -1,9 +1,4 @@
 import { Controller, Get } from '@nestjs/common';
 
 @Controller()
-export class AppController {
-  @Get()
-  getHello(): string {
-    return '¡El backend está funcionando correctamente!';
-  }
-}
+export class AppController {}
